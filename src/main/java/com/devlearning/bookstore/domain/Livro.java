@@ -17,7 +17,7 @@ public class Livro implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	private String titulo;
 	private String nomeAutor;
 	private String texto;
@@ -30,7 +30,7 @@ public class Livro implements Serializable {
 		
 	}
 
-	public Livro(int id, String titulo, String nomeAutor, String texto, Categoria categoria) {
+	public Livro(Integer id, String titulo, String nomeAutor, String texto, Categoria categoria) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
@@ -39,11 +39,11 @@ public class Livro implements Serializable {
 		this.categoria = categoria;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
